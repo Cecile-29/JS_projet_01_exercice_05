@@ -12,19 +12,18 @@
       <p>Créez deux champs pour entrer uniquement deux nombres.</p>
       <p>Un bouton permet de les multiplier.</p>
       <div class="row col-12 d-flex justify-content-center">
-        <div>
-          <form class="" action="index.html" method="post">
-            <!-- changement de type text en number pour les input
-            <p><input type="text" id="nombre1" value=""></p>
-            <p><input type="text" id="nombre2" value=""></p> -->
-            <p><input type="number" id="nombre1" value=""></p>
-            <p><input type="number" id="nombre2" value=""></p>
-            <p><button class="btn btn-primary" onclick="displayInput()">Multipliez !</button></p></div>
-          </form>
-        </div>
+        <form class="" action="index.html" method="post">
+          <!-- changement de type text en number pour les input
+          <p><input type="text" id="nombre1" value=""></p>
+          <p><input type="text" id="nombre2" value=""></p> -->
+          <p><input type="number" id="nombre1" value=""></p>
+          <p><input type="number" id="nombre2" value=""></p>
+          <p><button class="btn btn-primary" onclick="displayInput()">Multipliez !</button></p>
+        </form>
+      </div>
     </div>
     <!-- correction Saphir -->
-    <script type="text/javascript">
+    <script>
       function displayInput(){
       var inputNumber2 = document.getElementById('nombre2').value;
       var inputNumber1 = document.getElementById('nombre1').value;
