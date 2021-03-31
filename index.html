@@ -14,21 +14,38 @@
       <div class="row col-12 d-flex justify-content-center">
         <div>
           <form class="" action="index.html" method="post">
-            <p><input type="text" id="nombre1" value="" required></p>
-            <p><input type="text" id="nombre2" value="" required></p>
+            <!-- changement de type text en number pour les input
+            <p><input type="text" id="nombre1" value=""></p>
+            <p><input type="text" id="nombre2" value=""></p> -->
+            <p><input type="number" id="nombre1" value=""></p>
+            <p><input type="number" id="nombre2" value=""></p>
             <p><button class="btn btn-primary" onclick="displayInput()">Multipliez !</button></p></div>
           </form>
         </div>
     </div>
+    <!-- correction Saphir -->
     <script type="text/javascript">
       function displayInput(){
-        var inputNumber1 = document.getElementById('nombre1').value;
-        var inputNumber2 = document.getElementById('nombre2').value;
+      var inputNumber2 = document.getElementById('nombre2').value;
+      var inputNumber1 = document.getElementById('nombre1').value;
+      // on stocke dans calcul la multiplication dse deux variablespour les afficher.
+      calcul = inputNumber1 * inputNumber2;
+        if(inputNumber1 && inputNumber2){
+          alert(calcul);
+        }else{
+          alert("Veuillez remplir les champs par des chiffres ou des nombres, merci.");
+        }
+      }
+    </script>
+    <!-- <script type="text/javascript">
+      function displayInput(){
+      var inputNumber2 = document.getElementById('nombre2').value;
+      var inputNumber1 = document.getElementById('nombre1').value;
         if(isNaN(inputNumber1 && inputNumber2)){
         }else{
           alert(inputNumber1 * inputNumber2);
         }
       }
-    </script>
+    </script> -->
   </body>
 </html>
