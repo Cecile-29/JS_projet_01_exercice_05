@@ -27,11 +27,14 @@
       function displayInput(){
       var inputNumber2 = document.getElementById('nombre2').value;
       var inputNumber1 = document.getElementById('nombre1').value;
-      // on stocke dans calcul la multiplication dse deux variablespour les afficher.
+      // la variable calcul contient la multiplication des deux variables pour les afficher.
       calcul = inputNumber1 * inputNumber2;
+      // on vérifie l'existence des variables. si elles existent on les affiche dans une modale
         if(inputNumber1 && inputNumber2){
+          // si elles existent elles  sont affichées dans une modale
           alert(calcul);
         }else{
+          //sinon on affiche un message d'erreur
           alert("Veuillez remplir les champs par des chiffres ou des nombres, merci.");
         }
       }
